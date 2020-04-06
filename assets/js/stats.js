@@ -197,8 +197,8 @@ window.onload = ()=>{
                     .then((data)=>{
                         stateData = data.statewise;
                         indianData = data.cases_time_series;
-                        stateStats(state,stateData);
                         indianDailyStats(indianData);
+                        stateStats(state,stateData);
                     });
     //District Stat
     requestJSON("https://api.covid19india.org/state_district_wise.json")
