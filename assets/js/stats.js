@@ -191,7 +191,7 @@ function districtStats(districtName,data){
     }else{ console.log("Some Error occured!") }
 }
 
-window.onload = ()=>{
+window.addEventListener('load',()=>{
     // Indian Stat
     requestJSON("https://api.covid19india.org/data.json")
                     .then((data)=>{
@@ -204,10 +204,10 @@ window.onload = ()=>{
     requestJSON("https://api.covid19india.org/state_district_wise.json")
                     .then((data)=>{
                         districtData=data;
-                        districtStats(district,districtData);
+                        districtStats(district,data);
                     });
     requestJSON("https://covid19.mathdro.id/api/daily")
                     .then((data)=>{
                         worldDailyStats(data);
                     });
-}
+},false)
