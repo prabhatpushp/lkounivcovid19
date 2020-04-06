@@ -183,7 +183,11 @@ function districtStats(districtName,data){
     if(data != null){
         let row = data[state]["districtData"][district];
         pushDatatoDOM('district-name',`${district} COVID-19 Status`,true)
-        pushDatatoDOM('district-info',`<li>Confirmed : ${row.confirmed}</li>`,true)
+        if(row !== undefined){
+            pushDatatoDOM('district-info',`<li>Confirmed : ${row.confirmed}</li>`,true)
+        }else{
+            pushDatatoDOM('district-info',`<li>Confirmed : 0</li>`,true)
+        }
     }else{ console.log("Some Error occured!") }
 }
 

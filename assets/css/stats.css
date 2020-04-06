@@ -1,24 +1,3 @@
-main.stats-container{
-    display: grid;
-    grid-template-columns: 4fr 4fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 40px;
-    grid-template-areas: 
-    "w i s"
-    "w i d";
-}
-.world-stat{
-    grid-area: w;
-}
-.indian-stat{
-    grid-area: i;
-}
-.state-stat{
-    grid-area: s;
-}
-.district-stat{
-    grid-area: d;
-}
 
 .box{
     width: 100%;
@@ -112,3 +91,65 @@ main.stats-container{
     background-color: #ebebeb;
 }
 
+
+
+
+
+
+/* Desktop Devices */
+@media only screen and (min-width: 600px){
+    main.stats-container{
+        display: grid;
+        grid-template-columns: 4fr 4fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+        grid-template-areas: 
+        "w i s"
+        "w i d";
+    }
+    .world-stat{
+        grid-area: w;
+    }
+    .indian-stat{
+        grid-area: i;
+    }
+    .state-stat{
+        grid-area: s;
+    }
+    .district-stat{
+        grid-area: d;
+    }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        width: 100%;
+    }
+    main>div{
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    #world-stat{
+        width: 100%;
+        height: 50vh;
+    }
+    .stat-box .info{
+        padding: 0rem;
+    }
+    .stat-box .heading{
+        border-radius: 0px;
+    }
+    .stat-box{
+        border-radius: 0px;
+    }
+    #state-info li, #district-info li{
+        padding: 1rem;
+    }
+}
