@@ -1,43 +1,25 @@
 /* main section coding */
-
-main.home{
-    display: grid;
-    grid-template-columns: 21fr 28fr 33fr;
-    grid-template-rows: 13fr 4fr 27fr;
-    grid-gap: 40px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "c c n"
-    "t t n"
-    "s p p";
-}
-
 .covid-box{
-    grid-area: c;
     border: #7A9DFF 2px solid;
     border-radius: 0.8rem;
     background-color: #fff;
 }
 .notice-box{
-    grid-area: n;
     background-color: #fff;
     border-radius: 0.8rem;
 }
 .covid-tips{
-    grid-area: t;
     background-color: #DBC7FF; 
     border-radius: 8px;
     padding: 1.5rem;
 }
 
 .symptom-box{
-    grid-area: s;
     border: #ccc 1px solid;
     border-radius: 0.8rem;
     background-color: #fff; 
 }
 .prevention-box{
-    grid-area: p;
     border: #ccc 1px solid;
     border-radius: 0.8rem;
     background-color: #fff; 
@@ -167,7 +149,6 @@ main.home{
     list-style: none;
     margin-left: 1rem;
     text-align: left;
-    width: 450px;
     float: left;
 }
 .prevention-steps li{
@@ -195,7 +176,83 @@ main.home{
 
 .prevention-posts a{
     background-color: slateblue;
-    width: 150px;
     height: 200px;
     border-radius: 0.5rem;
+}
+
+
+
+/* Desktop Devices */
+@media only screen and (min-width: 600px){
+    main.home{
+        display: grid;
+        grid-template-columns: 21fr 28fr 33fr;
+        grid-template-rows: 13fr 4fr 27fr;
+        grid-gap: 40px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "c c n"
+        "t t n"
+        "s p p";
+    }
+    .prevention-posts a{
+        width: 150px;
+    }
+    
+    .covid-box{
+        grid-area: c;
+    }
+    .notice-box{
+        grid-area: n;
+    }
+    .covid-tips{
+        grid-area: t;
+    }
+    
+    .symptom-box{
+        grid-area: s;
+    }
+    .prevention-box{
+        grid-area: p;
+    }
+    .prevention-steps{
+        width: 450px;
+    }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px){
+
+
+    main.home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    main>div{
+        margin-bottom: 1em;
+    }
+    .box .heading{
+        padding: 0.5rem 1.5rem;
+    }
+    .prevention-box .info{
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .prevention-posts{
+        float: initial;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;;
+        grid-template-rows: 200px;
+        margin-left: 0rem;
+        text-align: left;
+        width: 100%;
+        padding: 1rem;
+    }
+
 }
