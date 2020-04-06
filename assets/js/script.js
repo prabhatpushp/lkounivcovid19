@@ -163,6 +163,7 @@ window.addEventListener("load",()=>{
          districtField.value = item.textContent;
          window.localStorage.setItem('district',item.textContent);
          district = item.textContent;
+         openSettings();
          districtdropdownArray.forEach(districtdropdown => {
            districtdropdown.classList.add('closed');
          });
