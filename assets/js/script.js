@@ -58,127 +58,127 @@ function pushDistrict(){
 }
 
 //settings section
-window.onload = ()=>{
-  //State Dropdown
-  state = window.localStorage.getItem('state');
-  const stateField = document.getElementById('state-value');
-  const statedropdown = document.getElementById('state-list');
-  Object.keys(statedistrictlist).forEach(state => {
-    statedropdown.innerHTML += `<li>${state}</li>`;
-  })
-  const statedropdownArray = [...statedropdown.querySelectorAll('li')];
-  let stateArray = [];
-  statedropdownArray.forEach(item => {
-    stateArray.push(item.textContent);
-  });
-
-  stateField.addEventListener('input', () => {
-    statedropdown.classList.add('open');
-    let inputValue = stateField.value.toLowerCase();
-    if (inputValue.length > 0) {
-      for (let j = 0; j < stateArray.length; j++) {
-        if (!(inputValue.substring(0, inputValue.length) === stateArray[j].substring(0, inputValue.length).toLowerCase())) {
-          statedropdownArray[j].classList.add('closed');
-        } else {
-          statedropdownArray[j].classList.remove('closed');
-        }
-      }
-    } else {
-      for (let i = 0; i < statedropdownArray.length; i++) {
-        statedropdownArray[i].classList.remove('closed');
-      }
-    }
-  });
-
-  statedropdownArray.forEach(item => {
-    item.addEventListener('click', evt => {
-      stateField.value = item.textContent;
-      window.localStorage.setItem('state',item.textContent);
-      state = item.textContent;
-      pushDistrict();
-      statedropdownArray.forEach(statedropdown => {
-        statedropdown.classList.add('closed');
-      });
-    });
-  });
-
-  stateField.addEventListener('focus', () => {
-    stateField.placeholder = 'Type State';
-    statedropdown.classList.add('open');
-    statedropdownArray.forEach(statedropdown => {
-      statedropdown.classList.remove('closed');
-    });
-  });
-
-  document.addEventListener('click', evt => {
-    const isstatedropdown = statedropdown.contains(evt.target);
-    const isInput = stateField.contains(evt.target);
-    if (!isstatedropdown && !isInput) {
-      statedropdown.classList.remove('open');
-    }
-  });
-
-
-  //District Dropdown
-  function pushDistrict(){
-    const districtField = document.getElementById('district-value');
-    const districtdropdown = document.getElementById('district-list');
-    if(statedistrictlist[state].indexOf(districtField.value) <0){
-      districtField.value = "";
-    }
-    districtdropdown.innerHTML = "";
-    statedistrictlist[state].forEach(districtName=>{
-      districtdropdown.innerHTML += `<li>${districtName}</li>`;
-    })
-    const districtdropdownArray = [...districtdropdown.querySelectorAll('li')];
-    let districtArray = [];
-    districtdropdownArray.forEach(item => {
-      districtArray.push(item.textContent);
-    });
-  
-    districtField.addEventListener('input', () => {
-      districtdropdown.classList.add('open');
-      let inputValue = districtField.value.toLowerCase();
-      if (inputValue.length > 0) {
-        for (let j = 0; j < districtArray.length; j++) {
-          if (!(inputValue.substring(0, inputValue.length) === districtArray[j].substring(0, inputValue.length).toLowerCase())) {
-            districtdropdownArray[j].classList.add('closed');
-          } else {
-            districtdropdownArray[j].classList.remove('closed');
-          }
-        }
-      } else {
-        for (let i = 0; i < districtdropdownArray.length; i++) {
-          districtdropdownArray[i].classList.remove('closed');
-        }
-      }
-    });
-  
-    districtdropdownArray.forEach(item => {
-      item.addEventListener('click', evt => {
-        districtField.value = item.textContent;
-        window.localStorage.setItem('district',item.textContent);
-        district = item.textContent;
-        districtdropdownArray.forEach(districtdropdown => {
-          districtdropdown.classList.add('closed');
-        });
-      });
-    });
-  
-    districtField.addEventListener('focus', () => {
-      districtField.placeholder = 'Type District';
-      districtdropdown.classList.add('open');
-      districtdropdownArray.forEach(districtdropdown => {
-        districtdropdown.classList.remove('closed');
-      });
-    });
-  
-    document.addEventListener('click', evt => {
-      const isdistrictdropdown = districtdropdown.contains(evt.target);
-      const isInput = districtField.contains(evt.target);
-      if (!isdistrictdropdown && !isInput) {
-        districtdropdown.classList.remove('open');
-      }
-    });
-  }
-}
+window.addEventListener("load",()=>{
+   //State Dropdown
+   state = window.localStorage.getItem('state');
+   const stateField = document.getElementById('state-value');
+   const statedropdown = document.getElementById('state-list');
+   Object.keys(statedistrictlist).forEach(state => {
+     statedropdown.innerHTML += `<li>${state}</li>`;
+   })
+   const statedropdownArray = [...statedropdown.querySelectorAll('li')];
+   let stateArray = [];
+   statedropdownArray.forEach(item => {
+     stateArray.push(item.textContent);
+   });
+ 
+   stateField.addEventListener('input', () => {
+     statedropdown.classList.add('open');
+     let inputValue = stateField.value.toLowerCase();
+     if (inputValue.length > 0) {
+       for (let j = 0; j < stateArray.length; j++) {
+         if (!(inputValue.substring(0, inputValue.length) === stateArray[j].substring(0, inputValue.length).toLowerCase())) {
+           statedropdownArray[j].classList.add('closed');
+         } else {
+           statedropdownArray[j].classList.remove('closed');
+         }
+       }
+     } else {
+       for (let i = 0; i < statedropdownArray.length; i++) {
+         statedropdownArray[i].classList.remove('closed');
+       }
+     }
+   });
+ 
+   statedropdownArray.forEach(item => {
+     item.addEventListener('click', evt => {
+       stateField.value = item.textContent;
+       window.localStorage.setItem('state',item.textContent);
+       state = item.textContent;
+       pushDistrict();
+       statedropdownArray.forEach(statedropdown => {
+         statedropdown.classList.add('closed');
+       });
+     });
+   });
+ 
+   stateField.addEventListener('focus', () => {
+     stateField.placeholder = 'Type State';
+     statedropdown.classList.add('open');
+     statedropdownArray.forEach(statedropdown => {
+       statedropdown.classList.remove('closed');
+     });
+   });
+ 
+   document.addEventListener('click', evt => {
+     const isstatedropdown = statedropdown.contains(evt.target);
+     const isInput = stateField.contains(evt.target);
+     if (!isstatedropdown && !isInput) {
+       statedropdown.classList.remove('open');
+     }
+   });
+ 
+ 
+   //District Dropdown
+   function pushDistrict(){
+     const districtField = document.getElementById('district-value');
+     const districtdropdown = document.getElementById('district-list');
+     if(statedistrictlist[state].indexOf(districtField.value) <0){
+       districtField.value = "";
+     }
+     districtdropdown.innerHTML = "";
+     statedistrictlist[state].forEach(districtName=>{
+       districtdropdown.innerHTML += `<li>${districtName}</li>`;
+     })
+     const districtdropdownArray = [...districtdropdown.querySelectorAll('li')];
+     let districtArray = [];
+     districtdropdownArray.forEach(item => {
+       districtArray.push(item.textContent);
+     });
+   
+     districtField.addEventListener('input', () => {
+       districtdropdown.classList.add('open');
+       let inputValue = districtField.value.toLowerCase();
+       if (inputValue.length > 0) {
+         for (let j = 0; j < districtArray.length; j++) {
+           if (!(inputValue.substring(0, inputValue.length) === districtArray[j].substring(0, inputValue.length).toLowerCase())) {
+             districtdropdownArray[j].classList.add('closed');
+           } else {
+             districtdropdownArray[j].classList.remove('closed');
+           }
+         }
+       } else {
+         for (let i = 0; i < districtdropdownArray.length; i++) {
+           districtdropdownArray[i].classList.remove('closed');
+         }
+       }
+     });
+   
+     districtdropdownArray.forEach(item => {
+       item.addEventListener('click', evt => {
+         districtField.value = item.textContent;
+         window.localStorage.setItem('district',item.textContent);
+         district = item.textContent;
+         districtdropdownArray.forEach(districtdropdown => {
+           districtdropdown.classList.add('closed');
+         });
+       });
+     });
+   
+     districtField.addEventListener('focus', () => {
+       districtField.placeholder = 'Type District';
+       districtdropdown.classList.add('open');
+       districtdropdownArray.forEach(districtdropdown => {
+         districtdropdown.classList.remove('closed');
+       });
+     });
+   
+     document.addEventListener('click', evt => {
+       const isdistrictdropdown = districtdropdown.contains(evt.target);
+       const isInput = districtField.contains(evt.target);
+       if (!isdistrictdropdown && !isInput) {
+         districtdropdown.classList.remove('open');
+       }
+     });
+   }
+},false);
