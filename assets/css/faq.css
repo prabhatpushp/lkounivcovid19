@@ -65,5 +65,11 @@ main.faq-container{
     .faq:last-child{
         margin-bottom: 0;
     }
+    .twitter-widget{
+        max-height: 50vh;
+    }
+    .telegram-widget{
+        height: 50vh;
+    }
 
 }

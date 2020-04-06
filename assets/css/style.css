@@ -146,85 +146,6 @@ main{
     }
     
 }
-@media only screen and (max-width: 600px){
-    
-    *::-webkit-scrollbar{
-        width: initial;
-        height: initial;
-    }
-    *::-webkit-scrollbar-track{
-        background: initial;
-        /* width: 5px; */
-        height: initial;
-    }
-    *::-webkit-scrollbar-thumb{
-        width: initial;
-        height: initial;
-        background:initial;
-    }
-
-    main{
-        margin:60px 0 4rem 0;
-    }
-    .settings{
-        margin:60px 0 4rem 0;
-    }
-    
-    .navbar{
-        bottom: 0;
-        width: 100vw;
-        height: 4rem;
-        -webkit-box-shadow: 0px -3px 20px 5px rgba(0,0,0,0.05);
-        -moz-box-shadow: 0px -3px 20px 5px rgba(0,0,0,0.05);
-        box-shadow: 0px -3px 20px 5px rgba(0,0,0,0.05);
-    }
-
-    .logo{
-        display: none;
-    }
-    .navbar-nav{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .nav-link{
-        justify-content: center;
-        height: 4rem;
-    }
-    .nav-item:last-child{
-        display: none;
-    }
-    .link-icon{
-        margin: 0;
-    }
-    .m-logo{
-        background-image: url('icons/logo.webp');
-        min-width: 40px;
-        min-height: 40px;
-        background-position: center center;
-        background-size: cover;
-    }
-    .mobile-navbar{
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-around;
-        padding: 0.5rem;
-        background-color: var(--bg-secondary);
-        transition: 200ms ease;
-        -webkit-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.05);
-        -moz-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.05);
-        box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.05);
-    }
-    .mobile-navbar h1 {
-        font-size: 1rem;
-        font-weight: 500;
-    }
-}
-
 /* settings section */
 .settings{
     width: calc(100% - 5rem);
@@ -317,3 +238,94 @@ form {
     cursor: pointer;
     font-size: 2rem;
 }
+@media only screen and (max-width: 600px){
+    
+    *::-webkit-scrollbar{
+        width: initial;
+        height: initial;
+    }
+    *::-webkit-scrollbar-track{
+        background: initial;
+        /* width: 5px; */
+        height: initial;
+    }
+    *::-webkit-scrollbar-thumb{
+        width: initial;
+        height: initial;
+        background:initial;
+    }
+
+    main{
+        margin:60px 0 4rem 0;
+    }
+    .settings{
+        margin:60px 0 4rem 0;
+    }
+    
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 4rem;
+        -webkit-box-shadow: 0px -3px 20px 5px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px -3px 20px 5px rgba(0,0,0,0.05);
+        box-shadow: 0px -3px 20px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-link{
+        justify-content: center;
+        height: 4rem;
+    }
+    .nav-item:last-child{
+        display: none;
+    }
+    .link-icon{
+        margin: 0;
+    }
+    .m-logo{
+        background-image: url('icons/logo.webp');
+        min-width: 40px;
+        min-height: 40px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .mobile-navbar{
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        padding: 0.5rem;
+        z-index: 999;
+        background-color: var(--bg-secondary);
+        transition: 200ms ease;
+        -webkit-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.05);
+        -moz-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.05);
+        box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.05);
+    }
+    .mobile-navbar h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .settings{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;;
+        margin: 0;
+    }
+    .close-settings{
+        top: 6rem;
+        right: 2rem;
+    }
+}
+
