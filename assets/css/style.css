@@ -148,6 +148,21 @@ main{
 }
 @media only screen and (max-width: 600px){
     
+    *::-webkit-scrollbar{
+        width: initial;
+        height: initial;
+    }
+    *::-webkit-scrollbar-track{
+        background: initial;
+        /* width: 5px; */
+        height: initial;
+    }
+    *::-webkit-scrollbar-thumb{
+        width: initial;
+        height: initial;
+        background:initial;
+    }
+
     main{
         margin:60px 0 4rem 0;
     }

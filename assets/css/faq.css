@@ -48,3 +48,22 @@ main.faq-container{
 .timeline-Header-description{
     display: none !important;
 }
+
+/* Desktop Devices */
+@media only screen and (min-width: 600px){
+
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px){
+    main.faq-container{
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .faq:last-child{
+        margin-bottom: 0;
+    }
+
+}
