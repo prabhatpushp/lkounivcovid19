@@ -1,0 +1,84 @@
+/*  covid logo  */
+.icon-covid{
+    background-position:0 0;
+}
+.nav-link:hover .icon-covid{
+    background-position:0 -40px;
+}
+.icon-covid.active{
+    background-position: 0 -40px;
+    pointer-events: none;
+}
+
+
+/*  stats logo  */
+.icon-stats{
+    background-position:0 -80px;
+}
+.nav-link:hover .icon-stats{
+    background-position:0 -120px;
+}
+.icon-stats.active{
+    background-position: 0 -120px;
+    pointer-events: none;
+}
+
+/*  contact logo  */
+.icon-contact{
+    background-position:0 -160px;
+}
+.nav-link:hover .icon-contact{
+    background-position:0 -200px;
+}
+.icon-contact.active{
+    background-position: 0 -200px;
+    pointer-events: none;
+}
+
+/*  link logo  */
+.icon-link{
+    background-position:0 -240px;
+}
+.nav-link:hover .icon-link{
+    background-position:0 -280px;
+}
+.icon-link.active{
+    background-position: 0 -280px;
+    pointer-events: none;
+}
+
+/*  faq logo  */
+.icon-faq{
+    background-position:0 -320px;
+}
+.nav-link:hover .icon-faq{
+    background-position:0 -360px;
+}
+.icon-faq.active{
+    background-position: 0 -360px;
+    pointer-events: none;
+}
+
+/*  settings logo  */
+.icon-settings{
+    min-width: 40px;
+    min-height: 40px;
+    background-position:0 -398px;
+    background-image:url('icons/icons.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*  light logo  */
+.icon-light{
+    background-position:0 -440px;
+}
+.nav-link:hover .icon-light{
+    background-position:0 -480px;
+}
+.icon-light.active{
+    background-position: 0 -480px;
+    pointer-events: none;
+}
+

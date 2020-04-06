@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucknow University COVID-19 Awareness App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/icon-sprite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item logo">
+                <a href="https://lkouniv.ac.in" class="nav-link">
+                    <div class="link-icon"></div>
+                    <span class="link-text">Lucknow University</br>COVID-19 Awareness</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    <div class="icon-covid active link-icon"></div>
+                    <span class="link-text">COVID-19</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <div class="icon-contact link-icon"></div>
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="links.html" class="nav-link">
+                    <div class="icon-link link-icon"></div>
+                    <span class="link-text">Important Links</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="stats.html" class="nav-link">
+                    <div class="icon-stats link-icon"></div>
+                    <span class="link-text">Statistics</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="faq.html" class="nav-link">
+                    <div class="icon-faq link-icon"></div>
+                    <span class="link-text">FAQ</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="openSettings()">
+                <a class="nav-link">
+                    <div class="icon-settings link-icon"></div>
+                    <span class="link-text">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="topbar" class="mobile-navbar">
+        <div class="m-logo"></div>
+        <h1 class="m-text">Lucknow University COVID-19 Awareness</h1>
+        <div class="icon-settings"></div>
+    </nav>
+    <main class="home">
+        <div class="covid-box">
+            <div class="box">
+                <div class="heading">
+                    <h3>Corona Virus Disease ( COVID-19 )</h3>
+                </div>
+                <div class="info">
+                    <p class="covid-info">Coronavirus disease (COVID-19) is an infectious disease caused by a new virus. The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="covid-tips">
+            <p id="tips">Get in touch with your local NGO's and district administration to volunteer for this cause.</p>
+        </div>
+        <div class="notice-box">
+            <div class="box">
+                <div class="heading">
+                    <h3>Notices And Information by Authorities</h3>
+                    <a href="" class="view-all">View All</a>
+                </div>
+                <div class="info">
+                    <ul class="notices">
+                        <li>
+                            <a href="" class="notice">
+                                <div class="notice-heading">
+                                    <h5>Prayagraj Authorities</h5>
+                                    <span>3 April 2020</span>
+                                </div>
+                                <div class="notice-content"><p>People going outside will be accountable for themselves. In any case </p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="notice">
+                                <div class="notice-heading">
+                                    <h5>Prayagraj Authorities</h5>
+                                    <span>3 April 2020</span>
+                                </div>
+                                <div class="notice-content"><p>People going outside will be accountable for themselves. In any case </p></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="notice">
+                                <div class="notice-heading">
+                                    <h5>Prayagraj Authorities</h5>
+                                    <span>3 April 2020</span>
+                                </div>
+                                <div class="notice-content"><p>People going outside will be accountable for themselves. In any case </p></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="symptom-box">
+            <div class="box">
+                <div class="heading">
+                    <h3>COVID-19 SYMPTOMS</h3>
+                </div>
+                <div class="info">
+                    <ul class="symptoms">
+                        <li class="symptom" style="background: #FFC2F8">cough</li>
+                        <li class="symptom" style="background: #90E690">fever</li>
+                        <li class="symptom" style="background: #DBC7FF">Tiredness</li>
+                        <li class="symptom" style="background: #FFDCB5">Breathing Difficulty</li>
+                        <li class="symptom" style="background: #BCCEFF">Persistent Chest Pain</li>
+                        <li class="symptom" style="background: #FFF680">Sore Throat</li>
+                        <li class="symptom" style="background: #CBE59D">diarrhoea</li>
+                    </ul>
+                    <p>People may be sick with the virus for 1 to 14 days before developing symptoms.Older people, and people with other medical conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill. People with fever, cough or difficulty breathing should call their doctor and seek medical attention.</p>
+                </div>
+            </div>
+        </div>
+        <div class="prevention-box">
+            <div class="box">
+                <div class="heading">
+                    <h3>PREVENTION FROM COVID-19</h3>
+                </div>
+                <div class="info-container">
+                    <div class="info">
+                        <ul class="prevention-steps">
+                            <li>Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub</li>
+                            <li>Cover nose or mouth while sneezing and coughing</li>
+                            <li>Stay home and Avoid close contact</li>
+                            <li>self-isolate from others in the household if you feel unwell</li>
+                            <li>Touch your eyes, nose, or mouth if your hands are not clean</li>
+                        </ul>
+                        <div class="prevention-posts">
+                            <a href="" style="background: #FFC2F8"></a>
+                            <a href="" style="background: #90E690"></a>
+                            <a href="" style="background: #DBC7FF"></a>
+                            <a href="" style="background: #FFDCB5"></a>
+                            <a href="" style="background: #BCCEFF"></a>
+                            <a href="" style="background: #FFF680"></a>
+                            <a href="" style="background: #CBE59D"></a>
+                            <a href="" style="background: #FFC2F8"></a>
+                            <a href="" style="background: #90E690"></a>
+                            <a href="" style="background: #DBC7FF"></a>
+                            <a href="" style="background: #FFDCB5"></a>
+                            <a href="" style="background: #BCCEFF"></a>
+                            <a href="" style="background: #FFF680"></a>
+                            <a href="" style="background: #CBE59D"></a>
+                            <a href="" style="background: #FFC2F8"></a>
+                            <a href="" style="background: #90E690"></a>
+                            <a href="" style="background: #DBC7FF"></a>
+                            <a href="" style="background: #FFDCB5"></a>
+                            <a href="" style="background: #BCCEFF"></a>
+                            <a href="" style="background: #FFF680"></a>
+                            <a href="" style="background: #CBE59D"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><div class="settings shide">
+        <div class="close-settings" onclick="openSettings()">&#10060;</div>
+        <form>
+            <input autocomplete="off" id="state-value" class="chosen-value" type="text" value="" placeholder="Type State">
+            <ul class="value-list" id="state-list"></ul>
+          </form>
+          <form>
+            <input autocomplete="off" id="district-value" class="chosen-value" type="text" value="" placeholder="Type District">
+            <ul class="value-list" id="district-list"></ul>
+          </form>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>

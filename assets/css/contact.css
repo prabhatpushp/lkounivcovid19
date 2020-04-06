@@ -1,0 +1,131 @@
+main.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 16fr 4fr;
+    grid-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "g v n"
+    "e d t";
+}
+
+.contact-box{
+    background-color: #fff;
+    border-radius: 0.8rem;
+    border: 1px #ccc solid;
+    max-height: 75vh;
+    overflow: auto;
+}
+.govt-box{
+    grid-area: g;
+}
+.vendor-box{
+    grid-area: v;
+}
+.NGO-box{
+    grid-area: n;
+}
+.emailus-box{
+    grid-area: e;
+    background: rgb(137,120,255);
+    padding: 1.5rem 2rem ;
+    border-radius: 0.8rem;
+    color: #fff;
+    background: linear-gradient(145deg, rgba(137,120,255,1) 0%, rgba(152,0,204,1) 100%);
+}
+.donate-box{
+    grid-area: d;
+    padding: 1.5rem 2rem ;
+    border-radius: 0.8rem;
+    color: #fff;
+    background: rgb(255,149,84);
+    background: linear-gradient(145deg, rgba(255,149,84,1) 0%, rgba(255,75,48,1) 100%);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.box .heading{
+    text-align: left;
+    border-radius: 0.6rem 0.6rem 0 0;
+    min-height: 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.5px;
+    justify-content: space-between;
+    background-color: #fff;
+    padding:1rem 1.5rem;
+    border-bottom: #ccc 1px solid;
+}
+.box .heading h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.contacts{
+    list-style: none;
+}
+.contacts .important{
+    background-color: rgb(21, 51, 224);
+}
+.important .contact{
+    color: #fff;
+} 
+.contacts li:nth-child(2n){
+    width: 100%;
+    background-color: #fafafa;
+}
+.contacts li{
+    padding:1.5rem 2.5rem;
+    filter: opacity(0.7);
+}
+.contacts li:hover{
+    filter: opacity(1);
+}
+.contact{
+    text-decoration: none;
+    color: #222;
+}
+.contact-heading{
+    margin-bottom: 0.5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-heading h5{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.contact-content p:not(:last-child){
+    padding-bottom: 0.5rem;
+}
+
+.emailus-box p, .donate-box p{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+    float: left;
+}
+
+.link,.donate{
+    text-decoration: none;
+    letter-spacing: 1px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.donate{
+    background-color: rgba(0, 0, 0, 0.4);
+}

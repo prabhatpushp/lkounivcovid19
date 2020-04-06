@@ -1,0 +1,110 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-gap: 40px;
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.links-container{
+    display: grid;
+    grid-gap: 40px;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.notice-container{
+    max-height: 80vh;
+    min-width: 500px;
+    float: left;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.links-container div{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem 1.3rem 1.5rem;
+    text-transform: uppercase;
+    transition: 200ms ease-in;
+}
+.links-container div:hover{
+    transform: scale(1.025);
+}
+.links-container div h5{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 1px #eee solid;
+    padding-bottom: 0.5rem;
+    margin:0 0 0.8rem 0;
+}
+.links-container div a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff;
+    background-color: rgba(0,123,255,.0627451);
+    word-wrap: break-word;
+    padding: 0.3rem;
+}
+.links-container div a:hover{
+    background-color: rgba(0,123,255,.2);
+}
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.box .heading{
+    text-align: left;
+    background-color: #7A9DFF;
+    min-height: 3rem;
+    display: flex;
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 2.5rem;
+    justify-content: space-between;
+}
+.box .heading h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.notice-box .box .heading{
+    background-color: #B873FC;
+}
+.notices{
+    list-style: none;
+}
+.notices li:nth-child(2n){
+    width: 100%;
+    background-color: #fafafa;
+}
+.notices li{
+    padding:1.5rem 2.5rem;
+    filter: opacity(0.7);
+}
+.notices li:hover{
+    filter: opacity(1);
+}
+.notice{
+    text-decoration: none;
+}
+.notice-heading{
+    margin-bottom: 0.5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notice-heading h5{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
