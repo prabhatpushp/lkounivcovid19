@@ -56,8 +56,6 @@ main{
     background-color: var(--bg-secondary);
     transition: 200ms ease;
     z-index: 999;
-    top: 0;
-    left: 0;
 }
 
 .navbar-nav{
@@ -119,35 +117,7 @@ main{
     margin-top: 1rem;
 }
 
-@media only screen and (min-width: 600px){
-    .nav-link:hover{
-        background-color: var(--bg-primary-dark);
-    }
-    .logo .nav-link:hover{
-        background-color: transparent;
-    }
-    .navbar-nav:hover .logo .link-icon{
-        width: 8rem;
-        height: 8rem;
-    }
-    .nav-link:hover .link-text{
-        font-weight: 700;
-    }
-    .navbar:hover .link-text{
-        display: initial;
-    }
-    .navbar:hover{
-        width: 16rem;
-        -webkit-box-shadow: 3px 0px 20px 5px rgba(0,0,0,0.05);
-        -moz-box-shadow: 3px 0px 20px 5px rgba(0,0,0,0.05);
-        box-shadow: 3px 0px 20px 5px rgba(0,0,0,0.05);
-    }
 
-    .mobile-navbar{
-        display: none;
-    }
-    
-}
 /* settings section */
 .settings{
     width: calc(100% - 5rem);
@@ -333,3 +303,35 @@ form {
     }
 }
 
+@media only screen and (min-width: 600px){
+    .nav-link:hover{
+        background-color: var(--bg-primary-dark);
+    }
+    .logo .nav-link:hover{
+        background-color: transparent;
+    }
+    .navbar-nav:hover .logo .link-icon{
+        width: 8rem;
+        height: 8rem;
+    }
+    .nav-link:hover .link-text{
+        font-weight: 700;
+    }
+    .navbar:hover .link-text{
+        display: initial;
+    }
+    .navbar:hover{
+        width: 16rem;
+        -webkit-box-shadow: 3px 0px 20px 5px rgba(0,0,0,0.05);
+        -moz-box-shadow: 3px 0px 20px 5px rgba(0,0,0,0.05);
+        box-shadow: 3px 0px 20px 5px rgba(0,0,0,0.05);
+    }
+    .navbar{
+        top: 0;
+        left: 0;
+    }
+    .mobile-navbar{
+        display: none;
+    }
+    
+}
