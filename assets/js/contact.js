@@ -12,7 +12,7 @@ window.addEventListener('load',()=>{
                             phonenumber = phonenumber.split(' ')[0];
                             pushContent = `
                             <li>
-                                <a href="tel:${phonenumber}" class="contact">
+                                <a href="tel:${phonenumber}" rel="noopener noreferrer" class="contact">
                                     <div class="contact-heading">
                                     <h5>${organisation}</h5>
                                         <p>${category} , ${city}</p>

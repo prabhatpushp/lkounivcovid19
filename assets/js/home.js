@@ -40,7 +40,7 @@ window.addEventListener('load',()=>{
                         console.log(notice)
                         pushContent += `
                         <li>
-                            <a href="${notice.link?notice.link:"#"}" class="notice">
+                            <a href="${notice.link?notice.link:"#"}" rel="noopener noreferrer" target="_blank" class="notice">
                                 <div class="notice-heading">
                                     <h5>${notice.source?notice.source:""}</h5>
                                     <span>${notice.date?notice.date:""}</span>
