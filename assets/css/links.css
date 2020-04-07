@@ -137,6 +137,7 @@
     .notice-container{
         min-width: initial;
         width: 100%;
+        border: 1px solid #ddd;
     }
     .heading{
         width: 100%;

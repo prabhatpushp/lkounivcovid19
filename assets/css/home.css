@@ -7,6 +7,7 @@
 .notice-box{
     background-color: #fff;
     border-radius: 0.8rem;
+    border: 1px solid #ddd;
 }
 .covid-tips{
     background-color: #DBC7FF; 
