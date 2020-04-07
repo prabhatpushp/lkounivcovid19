@@ -40,7 +40,7 @@ body{
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     min-height: 100vh;
     flex-direction: column;
 }
@@ -134,11 +134,11 @@ main{
     top: 0vh;
     left: 0;
     margin-left: 5rem;
-    padding: 50px;
+    padding: 30%;
     z-index: 99;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     transition: 200ms ease;
     background-color: var(--bg-primary);
@@ -226,6 +226,7 @@ footer{
     background-color: #DBC7FF; 
     padding: 1.5rem;
     width: 100%;
+    margin-top: auto;
 }
 @media only screen and (max-width: 600px){
     :root{
@@ -316,7 +317,7 @@ footer{
     }
     .close-settings{
         top: 6rem;
-        right: 2rem;
+        right: 1rem;
     }
 }
 
