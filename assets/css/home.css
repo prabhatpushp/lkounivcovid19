@@ -168,8 +168,8 @@
     float: left;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat( auto-fill, 150px );;
-    grid-template-rows: 200px;
+    grid-template-columns: repeat( auto-fill, minmax(180px,1fr));
+    grid-template-rows: 1fr;
     margin-left: 1rem;
     text-align: left;
     width: calc(100% - 500px);
@@ -177,8 +177,24 @@
 
 .prevention-posts a{
     background-color: slateblue;
-    height: 200px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: rgba(0, 0, 0, 0.6);
+    transition: 50ms ease;
+    text-decoration: none;
+}
+.prevention-posts a:hover{
+    transform: scale(1.025);
 }
 
 
@@ -195,9 +211,6 @@
         "c c n"
         "t t n"
         "s p p";
-    }
-    .prevention-posts a{
-        width: 150px;
     }
     
     .covid-box{
