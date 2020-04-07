@@ -132,7 +132,7 @@
         grid-template-rows: auto;
         grid-template-areas: 
         "g v n"
-        "e d t";
+        "e d .";
     }
     .govt-box{
         grid-area: g;
@@ -151,6 +151,31 @@
     }
     .prevention-steps{
         width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+
+    main.contact-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "g v"
+        "n e"
+        "n d";
+    }
+    main{
+        padding: 1rem;
+    }
+    .link, .donate{
+        padding: 0.5rem;
+        float: left;
+        margin: 0.5rem;
+    }
+    .donate-box{
+        padding: 1rem;
     }
 }
 

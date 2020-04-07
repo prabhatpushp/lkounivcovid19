@@ -204,9 +204,8 @@
     main.home{
         display: grid;
         grid-template-columns: 21fr 28fr 33fr;
-        grid-template-rows: 13fr 4fr 27fr;
-        grid-gap: 40px;
         grid-template-rows: auto;
+        grid-gap: 40px;
         grid-template-areas: 
         "c c n"
         "t t n"
@@ -234,6 +233,34 @@
     }
 }
 
+@media only screen and (max-width: 1500px){
+
+    main.home{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 40px;
+        grid-template-areas: 
+        "c c"
+        "t t"
+        "s n"
+        "p p";
+    }
+    .prevention-posts{
+        float: initial;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat( auto-fill, minmax(180px,1fr));
+        grid-template-rows: 1fr;
+        margin-left: 0rem;
+        text-align: left;
+        width: 100%;
+        padding: 1rem 0px;
+    }
+    .prevention-steps {
+        width: 100%;
+    }
+}
 /* Mobile Devices */
 @media only screen and (max-width: 600px){
 
