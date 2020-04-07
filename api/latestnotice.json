@@ -1,1 +1,20 @@
-[{"date":"06 Apr 2020","content":"Resource Material For Capacity Building of Healthcare Professionals for Covid-19 Containment","source":"Ministry of Health and Family Welfare, Govt. of India","link":"https://www.mohfw.gov.in/pdf/BASEDOCforRESOURCESrev06042020.pdf"},{"date":"06 Apr 2020","content":"Central Zoo Authority advises zoos in India to remain on high alert in view of a Tiger found COVID 19 positive in New York.","source":"Press Information Bureau, Govt. of India","link":"https://pib.gov.in/newsite/PrintRelease.aspx?relid=201056"},{"date":"06 Apr 2020","content":"Advisory regarding containing and management of COVID-19 in National Parks/Sanctuaries/Tiger Reserves.","source":"Press Information Bureau, Govt. of India","link":"https://pib.gov.in/newsite/PrintRelease.aspx?relid=201060"}]
+[
+    {
+        "date": "07 Apr 2020",
+        "content": "Guidance document on appropriate management of suspect/confirmed cases of COVID-19",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/FinalGuidanceonMangaementofCovidcasesversion2.pdf"
+    },
+    {
+        "date": "07 Apr 2020",
+        "content": "Revised Guidelines for Dialysis of COVID – 19 patients",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/RevisedGuidelinesforDialysisofCOVID19Patients.pdf"
+    },
+    {
+        "date": "07 Apr 2020",
+        "content": "Pradhan Mantri Garib Kalyan Package: Insurance Scheme for Health Workers Fighting COVID-19 (FAQs)",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/FAQPradhanMantriGaribKalyanPackageInsuranceSchemeforHealthWorkersFightingCOVID19.pdf"
+    }
+]
