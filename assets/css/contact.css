@@ -3,7 +3,7 @@
     background-color: #fff;
     border-radius: 0.8rem;
     border: 1px #ccc solid;
-    max-height: 75vh;
+    max-height: 60vh;
     overflow: auto;
 }
 .emailus-box{
@@ -45,6 +45,7 @@
     font-size: 1.3rem;
     font-weight: 500;
     color: #222;
+    text-transform: capitalize;
 }
 
 .contacts{
@@ -72,16 +73,24 @@
     color: #222;
 }
 .contact-heading{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     text-align: left;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: space-between;
 }
 .contact-heading h5{
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1px;
+}
+.contact-heading p {
+    color: royalblue;
+    margin:0.5rem 0 0.25rem 0;
+}
+.contact-content p:last-child{
+    font-weight: 500;
 }
 .contact-content p:not(:last-child){
     padding-bottom: 0.5rem;

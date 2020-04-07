@@ -38,8 +38,16 @@ body{
     background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+a{
+    color: #444;
+}
 
 main{
     width: calc(100% - 5rem);
@@ -209,6 +217,15 @@ form {
     right: 4em;
     cursor: pointer;
     font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBC7FF; 
+    padding: 1.5rem;
+    width: 100%;
 }
 @media only screen and (max-width: 600px){
     :root{

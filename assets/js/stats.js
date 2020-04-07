@@ -1,3 +1,6 @@
+if(window.localStorage.getItem('state')==null){
+    openSettings();
+}
 
 let indianData = null;
 let stateData = null;

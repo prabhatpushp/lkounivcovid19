@@ -60,9 +60,6 @@ function pushDistrict(){
 
 //settings section
 window.addEventListener("load",()=>{
-  if(window.localStorage.getItem('state')==null){
-    openSettings();
-  }
    //State Dropdown
    state = window.localStorage.getItem('state')==null?"Uttar Pradesh":window.localStorage.getItem('state');
    const stateField = document.getElementById('state-value');
@@ -167,6 +164,7 @@ window.addEventListener("load",()=>{
          districtdropdownArray.forEach(districtdropdown => {
            districtdropdown.classList.add('closed');
          });
+         window.location.reload();
        });
      });
    
