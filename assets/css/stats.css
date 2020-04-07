@@ -90,6 +90,9 @@
     color: #6c757d;
     background-color: #ebebeb;
 }
+.canvasjs-chart-tooltip{
+    z-index: 99 !important;
+}
 
 
 
