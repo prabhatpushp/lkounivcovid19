@@ -3,7 +3,7 @@ if(window.localStorage.getItem('state')==null){
 }
 
 window.addEventListener('load',()=>{
-    requestJSON("http://127.0.0.1:5500/api/resources.json")
+    requestJSON("https://lkounivcovid19.in/api/resources.json")
                 .then((data)=>{
                     let govt=``,vendor=``,ngo=``, pushContent;
                     data.forEach((resource)=>{
