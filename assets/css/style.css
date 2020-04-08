@@ -222,7 +222,8 @@ form {
     top: 2em;
     right: 4em;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 1rem;
 }
 
 .settings-inner{
