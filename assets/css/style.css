@@ -386,13 +386,3 @@ footer{
 }
 
 
-
-/* google translate */
-.skiptranslate:not(.goog-te-gadget){
-    display: none !important;
-}
-
-.goog-text-highlight{
-    background-color: inherit !important;
-    box-shadow: inherit !important;
-}

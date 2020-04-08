@@ -14,6 +14,19 @@
     border-radius: 8px;
     padding: 1.5rem;
 }
+.download{
+    background-color: rgb(255, 224, 120); 
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1.5rem;
+}
+.download:hover{
+    background-color: rgb(255, 216, 90); 
+}
 
 .symptom-box{
     border: #ccc 1px solid;
@@ -60,11 +73,11 @@
     letter-spacing: 1px;
     padding: 2.5rem;
 }
-.covid-tips{
+.covid-tips,.download{
     display: flex;
     align-items: center;
 }
-.covid-tips p{
+.covid-tips p,.download p{
     color: #222;
 }
 
@@ -208,7 +221,7 @@
         grid-gap: 40px;
         grid-template-areas: 
         "c c n"
-        "t t n"
+        "t d n"
         "s p p";
     }
     
@@ -220,6 +233,9 @@
     }
     .covid-tips{
         grid-area: t;
+    }
+    .download{
+        grid-area: d;
     }
     
     .symptom-box{
@@ -243,6 +259,7 @@
         grid-template-areas: 
         "c c"
         "t t"
+        "d d"
         "s n"
         "p p";
     }
