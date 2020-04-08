@@ -15,7 +15,7 @@
             <li class="nav-item logo">
                 <a href="http://lkouniv.ac.in" class="nav-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon"></div>
-                    <span class="link-text">Lucknow University</br>COVID-19 Awareness Navigator</span>
+                    <span class="link-text notranslate">Lucknow University</br>COVID-19 Awareness Navigator</span>
                 </a>
             </li>
             <li class="nav-item active">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="covid-tips">
+        <div class="covid-tips notranslate">
             <p id="tips">Get in touch with your local NGO's and district administration to volunteer for this cause.</p>
         </div>
         <div class="notice-box">
@@ -137,22 +137,32 @@
         </div>
     </main>
     <footer>
-       <p>Powered by SDI FoET University of Lucknow</p> 
+       <p>Powered by SDI FoET Lucknow University</p> 
     </footer>
-    <div class="settings shide">
+    <div class="settings shide notranslate">
         <div class="close-settings" onclick="openSettings()">&#10060;</div>
-        <form>
-            <input autocomplete="off" id="state-value" class="chosen-value" type="text" value="" placeholder="Type State">
-            <ul class="value-list" id="state-list"></ul>
-          </form>
-          <form>
-            <input autocomplete="off" id="district-value" class="chosen-value" type="text" value="" placeholder="Type District">
-            <ul class="value-list" id="district-list"></ul>
-          </form>
+        <div class="settings-inner">
+            <h6>Please type your state and district</h6>
+            <form>
+                <input autocomplete="off" id="state-value" class="chosen-value" type="text" value="" placeholder="Type State">
+                <ul class="value-list" id="state-list"></ul>
+              </form>
+              <form>
+                <input autocomplete="off" id="district-value" class="chosen-value" type="text" value="" placeholder="Type District">
+                <ul class="value-list" id="district-list"></ul>
+              </form>
+              <div id="google_translate_element"></div>
+        </div>
     </div>
 
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/home.js"></script>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
