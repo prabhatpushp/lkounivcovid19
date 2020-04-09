@@ -1,5 +1,5 @@
 window.addEventListener('load',()=>{
-    requestJSON("https://lkounivcovid19.in/api/notices.json")
+    requestJSON("https://lkounivCovid19.in/api/notices.json")
                 .then((data)=>{
                     let pushContent = ``;
                     data.forEach((notice)=>{

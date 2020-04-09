@@ -1,11 +1,11 @@
-/*  covid logo  */
-.icon-covid{
+/*  Covidlogo  */
+.icon-Covid{
     background-position:0 0;
 }
-.nav-link:hover .icon-covid{
+.nav-link:hover .icon-Covid{
     background-position:0 -40px;
 }
-.icon-covid.active{
+.icon-Covid.active{
     background-position: 0 -40px;
     pointer-events: none;
 }

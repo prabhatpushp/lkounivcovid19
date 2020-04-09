@@ -33,7 +33,7 @@ tips.innerText = tipsArray[Math.floor(Math.random()*tipsArray.length)];
 
 
 window.addEventListener('load',()=>{
-    requestJSON("https://lkounivcovid19.in/api/latestnotice.json")
+    requestJSON("https://lkounivCovid19.in/api/latestnotice.json")
                 .then((data)=>{
                     let pushContent = ``;
                     data.forEach((notice)=>{

@@ -170,7 +170,7 @@ function stateStats(stateName,data){
             state = stateName;
         }
         let row = data.find(o => o.state === stateName);
-        pushDatatoDOM('state-name',`${row.state} COVID-19 Status`,true)
+        pushDatatoDOM('state-name',`${row.state} Covid-19 Status`,true)
         pushDatatoDOM('state-info',`<li>Confirmed : ${row.confirmed}</li>`,true)
         pushDatatoDOM('state-info',`<li>Active : ${row.active}</li>`)
         pushDatatoDOM('state-info',`<li>Recovered : ${row.recovered}</li>`)
@@ -185,7 +185,7 @@ function districtStats(districtName,data){
     }
     if(data != null){
         let row = data[state]["districtData"][district];
-        pushDatatoDOM('district-name',`${district} COVID-19 Status`,true)
+        pushDatatoDOM('district-name',`${district} Covid-19 Status`,true)
         if(row !== undefined){
             pushDatatoDOM('district-info',`<li>Confirmed : ${row.confirmed}</li>`,true)
         }else{
@@ -196,7 +196,7 @@ function districtStats(districtName,data){
 
 window.addEventListener('load',()=>{
     // Indian Stat
-    requestJSON("https://api.covid19india.org/data.json")
+    requestJSON("https://api.Covid19india.org/data.json")
                     .then((data)=>{
                         stateData = data.statewise;
                         indianData = data.cases_time_series;
@@ -204,12 +204,12 @@ window.addEventListener('load',()=>{
                         stateStats(state,stateData);
                     });
     //District Stat
-    requestJSON("https://api.covid19india.org/state_district_wise.json")
+    requestJSON("https://api.Covid19india.org/state_district_wise.json")
                     .then((data)=>{
                         districtData=data;
                         districtStats(district,data);
                     });
-    requestJSON("https://covid19.mathdro.id/api/daily")
+    requestJSON("https://Covid19.mathdro.id/api/daily")
                     .then((data)=>{
                         worldDailyStats(data);
                     });
