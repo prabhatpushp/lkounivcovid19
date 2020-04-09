@@ -98,7 +98,6 @@ main{
 .link-text{
     display: none;
     padding: 0.5rem;
-    text-transform: uppercase;
 }
 
 .link-icon{
@@ -116,7 +115,6 @@ main{
 
 .logo .nav-link{
     flex-direction: column;
-    text-transform: capitalize;
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 1rem;
