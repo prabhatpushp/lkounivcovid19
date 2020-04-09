@@ -243,12 +243,17 @@ form {
 footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #DBC7FF; 
     padding: 1.5rem;
     width: 100%;
     margin-top: auto;
 }
+footer a{
+    text-decoration: none;
+    color: #222;
+}
+
 @media only screen and (max-width: 600px){
     :root{
         font-size: 14px;
@@ -339,6 +344,12 @@ footer{
     .close-settings{
         top: 6rem;
         right: 1rem;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer a{
+        margin-top: 0.5rem;
     }
 }
 
