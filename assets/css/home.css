@@ -263,8 +263,8 @@
         grid-gap: 40px;
         grid-template-areas: 
         "c c"
-        "t t"
         "d d"
+        "t t"
         "s n"
         "p p";
     }
