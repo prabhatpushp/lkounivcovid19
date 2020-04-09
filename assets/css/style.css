@@ -98,6 +98,7 @@ main{
 .link-text{
     display: none;
     padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .link-icon{
