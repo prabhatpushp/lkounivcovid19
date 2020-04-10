@@ -51,7 +51,7 @@ function worldDailyStats(data){
         },{
             type: "spline",
             showInLegend: true,
-            name: "आज संक्रमित",
+            name: "संक्रमित",
             xValueFormatString: "DD MMM, YYYY",
             color: "#F08080",
             dataPoints: dailyConfirmed
@@ -119,14 +119,14 @@ function indianDailyStats(data){
         data: [{
             type: "spline",
             showInLegend: true,
-            name: "आज संक्रमण मुक्त",
+            name: "संक्रमण मुक्त",
             xValueFormatString: "DD MMM, YYYY",
             color: "#28a745",
             dataPoints: dailyRecovered
         },{
             type: "spline",
             showInLegend: true,
-            name: "आज मौतें",
+            name: "मौतें",
             xValueFormatString: "DD MMM, YYYY",
             color: "#6c757d",
             dataPoints: dailyDeceased
@@ -140,7 +140,7 @@ function indianDailyStats(data){
         },{
             type: "spline",
             showInLegend: true,
-            name: "आज संक्रमित",
+            name: "संक्रमित",
             xValueFormatString: "DD MMM, YYYY",
             color: "#F08080",
             dataPoints: dailyConfirmed
