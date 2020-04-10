@@ -189,5 +189,7 @@ window.addEventListener("load",()=>{
 
 function changeLang(language="en"){
   window.localStorage.setItem("lang",language);
-  window.location.reload();
+  if(document.documentElement.lang != language){
+    window.location.reload();
+  }
 }
