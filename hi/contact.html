@@ -181,8 +181,11 @@
           new google.translate.TranslateElement({}, 'google_translate_element');
         }
         window.addEventListener('load',()=>{
-            document.querySelector(".goog-te-combo").value = "hi";
-            window.location.reload();
+            let ele = document.querySelector(".goog-te-combo")
+            if(ele.value !="hi"){
+                ele.value="hi"
+                window.location.reload();
+            }
         },false)
         </script>
         
