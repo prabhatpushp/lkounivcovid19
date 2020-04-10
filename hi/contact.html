@@ -17,7 +17,7 @@
         if(lang != document.documentElement.lang){
             let url = window.location.href.substr("https://lkounivcovid19.in/".length);
             if(lang == "en"){
-                url= url.substr(`${document.documentElement.lang}\`.length);
+                url= url.substr(`${document.documentElement.lang}/`.length);
                 window.location.href=`/${url}`;
             }else{
                 window.location.href=`/${lang}/${url}`;
