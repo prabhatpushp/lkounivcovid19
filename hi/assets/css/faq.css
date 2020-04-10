@@ -1,0 +1,77 @@
+
+main.faq-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    align-items: center;
+    grid-gap: 40px;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.faq-box ul{
+    list-style: none;
+}
+
+.faq{
+    margin-bottom: 1.5em;
+    border: 1px solid #d9d9d9;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+.faq-heading{
+    word-wrap: break-word;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #222;
+    margin:0 0 0.8rem 0;
+}
+.faq-content{
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+
+
+.twitter-widget{
+    border: 1px solid #d9d9d9;
+    height: 80vh;
+    overflow: auto;
+}
+.telegram-widget{
+    height: 80vh;
+    border: 1px solid #d9d9d9;
+}
+.timeline-Header-subtitle{
+    display: none !important;
+}
+.timeline-Header-description{
+    display: none !important;
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 600px){
+
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px){
+    main.faq-container{
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .faq:last-child{
+        margin-bottom: 0;
+    }
+    .twitter-widget{
+        max-height: 50vh;
+    }
+    .telegram-widget{
+        height: 50vh;
+    }
+
+}

@@ -1,0 +1,61 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.download-box{
+    width: 100%;
+    background-color: #fff;
+    padding: 4rem 5rem ; 
+    border: 1px solid #ddd;
+}
+.download-box h4{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.download-box p{
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+.counter{
+    float: right;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+}
+
+.counter span{
+    margin-right: 1rem;
+}
+
+.download-box a{
+    padding: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background-color:  rgb(255, 224, 120);
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px){
+
+    main{
+        justify-content: center;
+        padding: 30px 10px;
+        width: 100%;
+    }
+    .download-box{
+        padding: 3rem;
+    }
+    .counter{
+        margin-top: 3rem;
+        float: none;
+    }
+}
