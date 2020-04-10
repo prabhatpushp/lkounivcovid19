@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi"  class="notranslate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,6 @@
         if(lang != document.documentElement.lang){
             let url = window.location.href.substr("https://lkounivcovid19.in/".length);
             if(lang == "en"){
-                url= url.substr(`${document.documentElement.lang}/`.length);
                 url= url.substr(`${document.documentElement.lang}/`.length);
                 window.location.href=`/${url}`;
             }else{
@@ -83,7 +82,7 @@
         <div class="icon-settings" onclick="openSettings()"></div>
     </nav>
     <main class="contact-container">
-        <div class="contact-box govt-box">
+        <div class="contact-box govt-box" class="translate">
             <div class="box">
                 <div class="heading">
                     <h3>सरकारी प्राधिकरण और चिकित्सा सेवाएं</h3>
@@ -103,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-box vendor-box">
+        <div class="contact-box vendor-box" class="translate">
             <div class="box">
                 <div class="heading">
                     <h3>नि: शुल्क भोजन और खाद्य सामग्री विक्रेता</h3>
@@ -115,8 +114,8 @@
                 </div>
             </div>
         </div>
-        <div class="contact-box NGO-box">
-            <div class="box">
+        <div class="contact-box NGO-box" class="translate">
+            <div class="box" >
                 <div class="heading">
                     <h3>एनजीओ और अन्य सेवाएं</h3>
                 </div>
@@ -176,6 +175,20 @@
     
       gtag('config', 'UA-120642571-2');
     </script>
+
+    <div class="translate">Тестирование</p>
+    <div class="translate_control" lang="hi"></div>
+
+    <script>
+    function googleSectionalElementInit() {
+      new google.translate.SectionalElement({
+        sectionalNodeClassName: 'translate',
+        controlNodeClassName: 'translate_control',
+        background: '#f4fa58'
+      }, 'google_sectional_element');
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=en"></script>
     
 </body>
 </html>
