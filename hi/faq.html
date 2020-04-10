@@ -12,9 +12,20 @@
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="SDI FoET Lucknow University">
     <title >कोविद -19 पर अक्सर पूछे जाने वाले प्रश्न</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/faq.css">
-    <link rel="stylesheet" href="./assets/css/icon-sprite.css">
+    <script>
+        let lang = window.localStorage.getItem("lang")==null?document.documentElement.lang:window.localStorage.getItem("lang");
+        if(lang != document.documentElement.lang){
+            let url = window.location.href.substr("https://lkounivcovid19.in/".length);
+            if(lang == "en"){
+                window.location.href=`/${url}`;
+            }else{
+                window.location.href=`/${lang}/${url}`;
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="../assets/css/icon-sprite.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,50 +34,50 @@
             <li class="nav-item logo">
                 <a href="http://lkouniv.ac.in" class="nav-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon"></div>
-                    <span class="link-text ">LUCAN</br>Lucknow University</br>Covid-19 Navigator</span>
+                    <span class="link-text ">LUCAN</br>लखनऊ विश्वविद्यालय</br> कोविद -19 नेविगेटर</span>
                 </a>
             </li>
             <li class="nav-item active">
                 <a href="./" class="nav-link">
                     <div class="icon-Covid link-icon"></div>
-                    <span class="link-text">Covid-19</span>
+                    <span class="link-text">कोविद-19</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./contact" class="nav-link">
                     <div class="icon-contact link-icon"></div>
-                    <span class="link-text">Contact</span>
+                    <span class="link-text">संपर्क</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./links" class="nav-link">
                     <div class="icon-link link-icon"></div>
-                    <span class="link-text">Important Links</span>
+                    <span class="link-text">महत्त्वपूर्ण लिंक</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./stats" class="nav-link">
                     <div class="icon-stats link-icon"></div>
-                    <span class="link-text">Statistics</span>
+                    <span class="link-text">आँकड़े</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <div class="icon-faq active link-icon"></div>
-                    <span class="link-text">FAQ</span>
+                    <span class="link-text">अक्सर पूछे जाने वाले सवाल</span>
                 </a>
             </li>
             <li class="nav-item" onclick="openSettings()">
                 <a class="nav-link">
                     <div class="icon-settings link-icon"></div>
-                    <span class="link-text">Settings</span>
+                    <span class="link-text">सेटिंग्स</span>
                 </a>
             </li>
         </ul>
     </nav>
     <nav id="topbar" class="mobile-navbar">
         <a class="m-logo" href="http://lkouniv.ac.in" target="_blank" rel="noopener noreferrer"></a>
-        <h1 class="m-text">Lucknow University Covid-19 Navigator</h1>
+        <h1 class="m-text">लखनऊ विश्वविद्यालय कोविद -19 नेविगेटर</h1>
         <div class="icon-settings" onclick="openSettings()"></div>
     </nav>
     <main class="faq-container">
@@ -88,7 +99,7 @@
         </div>
     </main>
     <footer>
-       <p>Powered by SDI FoET Lucknow University</p><img src="https://www.webfreecounter.com/hit.php?id=grekcapo&nd=6&style=45 " alt="View counter">
+       <p>SDI FoETLucknow University के सौजन्य से </p><img src="https://www.webfreecounter.com/hit.php?id=grekcapo&nd=6&style=45 " alt="View counter">
        <a href="mailto:contact@lkounivcovid19.in">contact@lkounivcovid19.in</a>  
     </footer>
     <div class="settings shide ">
@@ -103,6 +114,10 @@
                 <input autocomplete="off" id="district-value" class="chosen-value" type="text" value="" placeholder="Type District">
                 <ul class="value-list" id="district-list"></ul>
               </form>
+              <div class="lang-buttons">
+                <a onclick="changeLang('en')">English</a>
+                <a onclick="changeLang('hi')">हिन्दी</a>
+              </div>
               <div id="google_translate_element"></div>
         </div>
     </div>

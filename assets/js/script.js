@@ -2,7 +2,6 @@ let statedistrictlist = { "Andaman and Nicobar Islands": ["Nicobars","North and 
 let state = window.localStorage.getItem('state')==null?"Uttar Pradesh":window.localStorage.getItem('state');
 let district=window.localStorage.getItem('district')==null?"Lucknow":window.localStorage.getItem('district');
 
-
 // hide navbar on scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -185,3 +184,9 @@ window.addEventListener("load",()=>{
      });
    }
 },false);
+
+
+function changeLang(language="en"){
+  window.localStorage.setItem("lang",language);
+  window.location.reload();
+}

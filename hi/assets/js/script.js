@@ -185,3 +185,9 @@ window.addEventListener("load",()=>{
      });
    }
 },false);
+
+
+function changeLang(language="en"){
+  window.localStorage.setItem("lang",language);
+  window.location.reload();
+}

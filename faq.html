@@ -12,9 +12,20 @@
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="SDI FoET Lucknow University">
     <title >Frequently Asked Questions on Covid19</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/faq.css">
-    <link rel="stylesheet" href="./assets/css/icon-sprite.css">
+    <script>
+        let lang = window.localStorage.getItem("lang")==null?document.documentElement.lang:window.localStorage.getItem("lang");
+        if(lang != document.documentElement.lang){
+            let url = window.location.href.substr("https://lkounivcovid19.in/".length);
+            if(lang == "en"){
+                window.location.href=`/${url}`;
+            }else{
+                window.location.href=`/${lang}/${url}`;
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="../assets/css/icon-sprite.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -103,6 +114,10 @@
                 <input autocomplete="off" id="district-value" class="chosen-value" type="text" value="" placeholder="Type District">
                 <ul class="value-list" id="district-list"></ul>
               </form>
+              <div class="lang-buttons">
+                <a onclick="changeLang('en')">English</a>
+                <a onclick="changeLang('hi')">हिन्दी</a>
+              </div>
               <div id="google_translate_element"></div>
         </div>
     </div>

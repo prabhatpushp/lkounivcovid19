@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Download LUCAN App</title>
-    <meta name="title" content="Download LUCAN App">
-    <meta name="description" content="Download LUCAN App that empowers the user by informing about potential risks of infections through WiFi tracing and equips people through self-assessment tools, health advices and helps to maintain the social distancing.">
+    <title >LUCAN ऐप डाउनलोड करें</title>
+    <meta name="title" content="LUCAN ऐप डाउनलोड करें">
+    <meta name="description" content="LUCAN ऐप डाउनलोड करें जो वाईफाई ट्रेसिंग के माध्यम से संक्रमण के संभावित जोखिमों के बारे में सूचित करके उपयोगकर्ता को सशक्त बनाता है और लोगों को स्व-मूल्यांकन उपकरण, स्वास्थ्य सलाह के माध्यम से लैस करता है और सामाजिक दूरी को बनाए रखने में मदद करता है।">
     <meta name="keywords" content="LUCAN,Download LUCAN, Covid19">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
+    <meta name="language" content="Hindi">
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="SDI FoET Lucknow University">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/download.css">
-    <link rel="stylesheet" href="./assets/css/icon-sprite.css">
+    <script>
+        let lang = window.localStorage.getItem("lang")==null?document.documentElement.lang:window.localStorage.getItem("lang");
+        if(lang != document.documentElement.lang){
+            let url = window.location.href.substr("https://lkounivcovid19.in/".length);
+            if(lang == "en"){
+                window.location.href=`/${url}`;
+            }else{
+                window.location.href=`/${lang}/${url}`;
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/download.css">
+    <link rel="stylesheet" href="../assets/css/icon-sprite.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,64 +34,64 @@
             <li class="nav-item logo">
                 <a href="http://lkouniv.ac.in" class="nav-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon"></div>
-                    <span class="link-text ">LUCAN</br>Lucknow University</br>Covid-19 Navigator</span>
+                    <span class="link-text ">LUCAN</br>लखनऊ विश्वविद्यालय</br> कोविद -19 नेविगेटर</span>
                 </a>
             </li>
             <li class="nav-item active">
                 <a href="./" class="nav-link">
                     <div class="icon-Covid link-icon"></div>
-                    <span class="link-text">Covid-19</span>
+                    <span class="link-text">कोविद-19</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./contact" class="nav-link">
                     <div class="icon-contact link-icon"></div>
-                    <span class="link-text">Contact</span>
+                    <span class="link-text">संपर्क</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./links" class="nav-link">
                     <div class="icon-link link-icon"></div>
-                    <span class="link-text">Important Links</span>
+                    <span class="link-text">महत्त्वपूर्ण लिंक</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./stats" class="nav-link">
                     <div class="icon-stats link-icon"></div>
-                    <span class="link-text">Statistics</span>
+                    <span class="link-text">आँकड़े</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="./faq" class="nav-link">
                     <div class="icon-faq link-icon"></div>
-                    <span class="link-text">FAQ</span>
+                    <span class="link-text">अक्सर पूछे जाने वाले सवाल</span>
                 </a>
             </li>
             <li class="nav-item" onclick="openSettings()">
                 <a class="nav-link">
                     <div class="icon-settings link-icon"></div>
-                    <span class="link-text">Settings</span>
+                    <span class="link-text">सेटिंग्स</span>
                 </a>
             </li>
         </ul>
     </nav>
     <nav id="topbar" class="mobile-navbar">
         <a class="m-logo" href="http://lkouniv.ac.in" target="_blank" rel="noopener noreferrer"></a>
-        <h1 class="m-text">Lucknow University Covid-19 Navigator</h1>
+        <h1 class="m-text">लखनऊ विश्वविद्यालय कोविद -19 नेविगेटर</h1>
         <div class="icon-settings" onclick="openSettings()"></div>
     </nav>
     <main class="download">
         <div class="download-box">
-            <h4>LUCAN (Lucknow University COVID-19 Awareness Navigator)</h4>
-            <p>LUCAN (Lucknow University COVID-19 Awareness Navigator) App is a mobile application, powered by SDI FoET LU, aimed to connect people and health services in our fight against COVID-19. LUCAN empowers the user by informing about potential risks of infections through WiFi tracing and equips people through self-assessment tools, health advices and helps to maintain the social distancing.</p>
-            <a href="">Download Now</a>
+            <h4>लखनऊ विश्वविद्यालय कोविद -19  नेविगेटर</h4>
+            <p>LUCAN (लखनऊ विश्वविद्यालय COVID-19 नेविगेटर) ऐप एक मोबाइल एप्लिकेशन है, जो कि SDI FoET लखनऊ विश्वविद्यालय द्वारा संचालित है, जिसका उद्देश्य कोविद -19 के खिलाफ हमारी लड़ाई में लोगों और स्वास्थ्य सेवाओं को जोड़ना है। LUCAN उपयोगकर्ता को वाईफाई ट्रेसिंग के माध्यम से संक्रमण के संभावित जोखिमों के बारे में सूचित करके और आत्म-मूल्यांकन उपकरण, स्वास्थ्य सलाह के माध्यम से लोगों को लैस करता है और सामाजिक दूरी को बनाए रखने में मदद करता है।</p>
+            <a href="">अभी डाउनलोड करें</a>
             <div class="counter">
-               <span>Total Downloads :</span>  <img src="https://www.webfreecounter.com/hit.php?id=gvmukcakd&nd=6&style=45" alt="hit counter">
+               <span>कुल डाउनलोड :</span>  <img src="https://www.webfreecounter.com/hit.php?id=gvmukcakd&nd=6&style=45" alt="hit counter">
             </div>
         </div>
     </main>
     <footer>
-       <p>Powered by SDI FoET Lucknow University</p><img src="https://www.webfreecounter.com/hit.php?id=grekcapo&nd=6&style=45 " alt="View counter">
+       <p>SDI FoETLucknow University के सौजन्य से </p><img src="https://www.webfreecounter.com/hit.php?id=grekcapo&nd=6&style=45 " alt="View counter">
        <a href="mailto:contact@lkounivcovid19.in">contact@lkounivcovid19.in</a> 
     </footer>
     <div class="settings shide ">
@@ -95,6 +106,10 @@
                 <input autocomplete="off" id="district-value" class="chosen-value" type="text" value="" placeholder="Type District">
                 <ul class="value-list" id="district-list"></ul>
               </form>
+              <div class="lang-buttons">
+                <a onclick="changeLang('en')">English</a>
+                <a onclick="changeLang('hi')">हिन्दी</a>
+              </div>
               <div id="google_translate_element"></div>
         </div>
     </div>
