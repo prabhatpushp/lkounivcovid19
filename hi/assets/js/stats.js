@@ -44,21 +44,21 @@ function worldDailyStats(data){
         data: [{
             type: "spline",
             showInLegend: true,
-            name: "Total Deaths",
+            name: "कुल मृत्यु",
             xValueFormatString: "DD MMM, YYYY",
             color: "#6c757d",
             dataPoints: deceased
         },{
             type: "spline",
             showInLegend: true,
-            name: "Confirmed",
+            name: "आज संक्रमित",
             xValueFormatString: "DD MMM, YYYY",
             color: "#F08080",
             dataPoints: dailyConfirmed
         },{
             type: "spline",
             showInLegend: true,
-            name: "Total Confirmed",
+            name: "कुल संक्रमित",
             xValueFormatString: "DD MMM, YYYY",
             color: "#ff073a",
             dataPoints: totalConfirmed
@@ -119,35 +119,35 @@ function indianDailyStats(data){
         data: [{
             type: "spline",
             showInLegend: true,
-            name: "Recovered",
+            name: "आज संक्रमण मुक्त",
             xValueFormatString: "DD MMM, YYYY",
             color: "#28a745",
             dataPoints: dailyRecovered
         },{
             type: "spline",
             showInLegend: true,
-            name: "Deaths",
+            name: "आज मौतें",
             xValueFormatString: "DD MMM, YYYY",
             color: "#6c757d",
             dataPoints: dailyDeceased
         },{
             type: "spline",
             showInLegend: true,
-            name: "Total Deaths",
+            name: "कुल मौतें",
             xValueFormatString: "DD MMM, YYYY",
             color: "#444444",
             dataPoints: totalDeceased
         },{
             type: "spline",
             showInLegend: true,
-            name: "Confirmed",
+            name: "आज संक्रमित",
             xValueFormatString: "DD MMM, YYYY",
             color: "#F08080",
             dataPoints: dailyConfirmed
         },{
             type: "spline",
             showInLegend: true,
-            name: "Total Confirmed",
+            name: "कुल संक्रमित",
             xValueFormatString: "DD MMM, YYYY",
             color: "#ff073a",
             dataPoints: totalConfirmed
@@ -171,10 +171,10 @@ function stateStats(stateName,data){
         }
         let row = data.find(o => o.state === stateName);
         pushDatatoDOM('state-name',`${row.state} Covid-19 Status`,true)
-        pushDatatoDOM('state-info',`<li>Confirmed : ${row.confirmed}</li>`,true)
-        pushDatatoDOM('state-info',`<li>Active : ${row.active}</li>`)
-        pushDatatoDOM('state-info',`<li>Recovered : ${row.recovered}</li>`)
-        pushDatatoDOM('state-info',`<li>Deaths : ${row.deaths}</li>`)
+        pushDatatoDOM('state-info',`<li>संक्रमित : ${row.confirmed}</li>`,true)
+        pushDatatoDOM('state-info',`<li>सक्रिय : ${row.active}</li>`)
+        pushDatatoDOM('state-info',`<li>संक्रमण मुक्त : ${row.recovered}</li>`)
+        pushDatatoDOM('state-info',`<li>मौतें : ${row.deaths}</li>`)
     }else{ console.log("Some Error occured!") }
 }
 // District Stat
@@ -187,9 +187,9 @@ function districtStats(districtName,data){
         let row = data[state]["districtData"][district];
         pushDatatoDOM('district-name',`${district} Covid-19 Status`,true)
         if(row !== undefined){
-            pushDatatoDOM('district-info',`<li>Confirmed : ${row.confirmed}</li>`,true)
+            pushDatatoDOM('district-info',`<li>संक्रमित : ${row.confirmed}</li>`,true)
         }else{
-            pushDatatoDOM('district-info',`<li>Confirmed : 0</li>`,true)
+            pushDatatoDOM('district-info',`<li>संक्रमित : 0</li>`,true)
         }
     }else{ console.log("Some Error occured!") }
 }

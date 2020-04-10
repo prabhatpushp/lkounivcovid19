@@ -22,7 +22,7 @@ let tipsArray = ["Don't hoard groceries and essentials. Please ensure that peopl
 "The virus does not discriminate. Why do you? DO NOT DISCRIMINATE. We are all Indians!",
 "Our brothers from the North-East are just as Indian as you! Help everyone during this crisis ❤️",
 "Get in touch with your local NGO's and district administration to volunteer for this cause.",
-"This will pass too. Enjoy your time at home and spend quality time with your family! Things will be normal soon.",
+"This too will pass. Enjoy your time at home and spend quality time with your family! Things will be normal soon.",
 "#BreakTheChain of unverified WhatsApp forwards which spread wrong information! Do not forward unless you verify it."];
 let tips = document.getElementById('tips');
 setInterval(()=>{
