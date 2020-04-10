@@ -40,10 +40,6 @@ main.faq-container{
     height: 80vh;
     overflow: auto;
 }
-.telegram-widget{
-    height: 80vh;
-    border: 1px solid #d9d9d9;
-}
 .timeline-Header-subtitle{
     display: none !important;
 }
@@ -69,9 +65,6 @@ main.faq-container{
     }
     .twitter-widget{
         max-height: 50vh;
-    }
-    .telegram-widget{
-        height: 50vh;
     }
 
 }
