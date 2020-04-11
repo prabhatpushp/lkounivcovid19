@@ -278,6 +278,12 @@ footer a{
     background-color: #222222;
 }
 
+.visit-counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
