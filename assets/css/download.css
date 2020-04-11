@@ -5,6 +5,9 @@ main{
     min-height: 90vh;
 }
 
+.infographic{
+    max-height: 90vh;
+}
 .download-box{
     width: 100%;
     background-color: #fff;
