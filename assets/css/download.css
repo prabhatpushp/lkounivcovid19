@@ -48,6 +48,7 @@ main{
 
     main{
         justify-content: center;
+        flex-direction: column;
         padding: 30px 10px;
         width: 100%;
     }
