@@ -1,14 +1,10 @@
 main{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     min-height: 90vh;
 }
 
-.infographic{
-    max-height: 90vh;
-    margin-right: 2rem;
-}
 .download-box{
     width: 100%;
     background-color: #fff;
@@ -52,13 +48,8 @@ main{
 
     main{
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
         padding: 30px 10px;
         width: 100%;
-    }
-    .infographic{
-        margin-right: 0;
     }
     .download-box{
         padding: 3rem;
