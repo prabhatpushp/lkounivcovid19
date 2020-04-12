@@ -1,20 +1,20 @@
 [
     {
-        "date": "10 Apr 2020",
-        "content": "MHA Order along with 5th Addendum giving exemption to Fishing (Marine) and Aquaculture Industry  (10.4.2020)",
-        "source": "Minister of Home Affairs, Govt. of India",
-        "link": "https://mha.gov.in/sites/default/files/MHA%20Order%20Dated%2010.4.2020%20along%20with%205th%20Addendum%20giving%20exemption%20to%20Fishing%20%28Marine%29%20and%20Aquaculture%20Industry.pdf"
+        "date": "11 Apr 2020",
+        "content": "AIIMS – 2nd Webinar Series for Nurses for Training In Care of COVID-19 Patients",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/SECONDCOVIDWEbinarforNursingofficers.pdf"
     },
     {
-        "date": "10 Apr 2020",
-        "content": "PIB’S Daily Bulletin on COVID-19",
-        "source": "Press Information Bureau, Govt. of India",
-        "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1613062"
-    },
-    {
-        "date": "10 Apr 2020",
-        "content": "ICMR - Guidance on the use of Truenat beta CoV",
+        "date": "11 Apr 2020",
+        "content": "ICMR Guidelines for Liver Transplantation and COVID-19 infection",
         "source": "Indian Council of Medical Research, Govt. of India",
-        "link": "https://icmr.nic.in/sites/default/files/upload_documents/Guidance_TrueNat_10042020.pdf"
+        "link": "https://icmr.nic.in/sites/default/files/upload_documents/Guidelines_for_Liver_Transplantation_COVID_updated_11042020.pdf"
+    },
+    {
+        "date": "11 Apr 2020",
+        "content": "ICMR – SOP for Multiplex Real-Time PCR for detection of SARS-CoV-2 using TaqPath COVID-19 Combo Kit (Applied Biosystems).",
+        "source": "Indian Council of Medical Research, Govt. of India",
+        "link": "https://icmr.nic.in/sites/default/files/upload_documents/SARS_CoV2_using_TaqPath_COVID19_ComboKit.pdf"
     }
 ]
