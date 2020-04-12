@@ -62,11 +62,4 @@ main{
     .infographic{
         margin-right: 0;
     }
-    .download-box{
-        padding: 3rem;
-    }
-    .counter{
-        margin-top: 3rem;
-        float: none;
-    }
 }
