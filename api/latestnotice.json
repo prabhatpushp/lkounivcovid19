@@ -1,5 +1,11 @@
 [
     {
+        "date": "17 Apr 2020",
+        "content": "Updated Containment Plan for Large Outbreaks Novel Coronavirus Disease 2019 (COVID-19)",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/UpdatedContainmentPlanforLargeOutbreaksofCOVID19Version2.0.pdf"
+    },
+    {
         "date": "16 Apr 2020",
         "content": "PIB’S Daily Bulletin On COVID-19 (16-04-2020)",
         "source": "Press Information Bureau, Govt. of India",
@@ -10,11 +16,5 @@
         "content": "Cabinet Secretary writes to all States/ UTs to ensure Safety, Shelter and Food Security of Migrant Labourers",
         "source": "Press Information Bureau, Govt. of India",
         "link": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=202315"
-    },
-    {
-        "date": "16 Apr 2020",
-        "content": "Chitra GeneLAMP-N makes confirmatory tests results of COVID 19 possible in 2 hours",
-        "source": "Press Information Bureau, Govt. of India",
-        "link": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=202312"
     }
 ]
