@@ -1,5 +1,71 @@
 [
     {
+        "date": "01 May 2020",
+        "content": "MHA Order to extend Lockdown period for 2 weeks with effect from 04.05.2020 with New Guidelines",
+        "source": "Ministry of Home Affairs, Govt. of India",
+        "link": "https://www.mha.gov.in/sites/default/files/MHA%20Order%20Dt.%201.5.2020%20to%20extend%20Lockdown%20period%20for%202%20weeks%20w.e.f.%204.5.2020%20with%20new%20guidelines.pdf"
+    },
+    {
+        "date": "01 May 2020",
+        "content": "NDMA order dated regarding extension of lockdown for 2 more weeks after 4.5.2020",
+        "source": "National Disaster Management Authority, Govt. of India",
+        "link": "https://ndma.gov.in/images/covid/NDMA-ORDER-DTD-1.5.20.pdf"
+    },
+    {
+        "date": "01 May 2020",
+        "content": "Heatwave Dos and Don’ts during COVID-19",
+        "source": "National Disaster Management Authority, Govt. of India",
+        "link": "https://ndma.gov.in/images/covid/Heat%20Wave-Dos-and-Donts.pdf"
+    },
+    {
+        "date": "01 May 2020",
+        "content": "PIB’s Daily Bulletin On COVID-19",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1620101"
+    },
+    {
+        "date": "01 May 2020",
+        "content": "Additional guidelines on rational use of Personal Protective Equipment (setting approach for Health functionaries working in non-COVID areas)",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/AdditionalguidelinesonrationaluseofPersonalProtectiveEquipmentsettingapproachforHealthfunctionariesworkinginnonCOVIDareas.pdf"
+    },
+    {
+        "date": "30 Apr 2020",
+        "content": "MHA to Chief Secretaries and Administrators to allow unhindered movement of trucks carrying goods",
+        "source": "Ministry of Home Affairs, Govt. of India",
+        "link": "https://www.mha.gov.in/sites/default/files/MHA%20Do%20Ltr%20Dt.%2030.4.2020%20to%20Chief%20Secretaries%20and%20Administrators%20to%20allow%20unhindered%20movement%20of%20trucks%20carrying%20goods.pdf"
+    },
+    {
+        "date": "30 Apr 2020",
+        "content": "AYURAKSHA-Corona Se Jung- Delhi Police Ke Sang launched by All India Institute of Ayurveda",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=202695"
+    },
+    {
+        "date": "30 Apr 2020",
+        "content": "Microwave steriliser to disintegrate novel Coronavirus developed",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=202687"
+    },
+    {
+        "date": "30 Apr 2020",
+        "content": "DST launches programme on health & risk communication with focus on COVID-19",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=202686"
+    },
+    {
+        "date": "30 Apr 2020",
+        "content": "SERB approves funding for study of mathematical & simulation aspects of COVID 19",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/newsite/PrintRelease.aspx?relid=202685"
+    },
+    {
+        "date": "30 Apr 2020",
+        "content": "PIB’s Daily Bulletin On COVID-19",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1619646"
+    },
+    {
         "date": "29 Apr 2020",
         "content": "MHA Order on movement of migrant workers, pilgrims, tourists, students and other persons",
         "source": "Ministry of Home Affairs, Govt. of India",
