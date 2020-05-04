@@ -1,20 +1,20 @@
 [
     {
+        "date": "02 May 2020",
+        "content": "Plasma therapy is no silver bullet - To recommend it without undertaking a robust scientific study may cause more harm than good dated 01/05/2020",
+        "source": "Indian Council for Medical Research, Govt. of India",
+        "link": "https://www.icmr.gov.in/pdf/press_realease_files/TheHindu_DrBhargava_1May2020_V1.pdf"
+    },
+    {
+        "date": "02 May 2020",
+        "content": "PIB’S Daily Bulletin On COVID-19",
+        "source": "Press Information Bureau, Govt. of India",
+        "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1620456"
+    },
+    {
         "date": "01 May 2020",
         "content": "MHA Order to extend Lockdown period for 2 weeks with effect from 04.05.2020 with New Guidelines",
         "source": "Ministry of Home Affairs, Govt. of India",
         "link": "https://www.mha.gov.in/sites/default/files/MHA%20Order%20Dt.%201.5.2020%20to%20extend%20Lockdown%20period%20for%202%20weeks%20w.e.f.%204.5.2020%20with%20new%20guidelines.pdf"
-    },
-    {
-        "date": "01 May 2020",
-        "content": "NDMA order dated regarding extension of lockdown for 2 more weeks after 4.5.2020",
-        "source": "National Disaster Management Authority, Govt. of India",
-        "link": "https://ndma.gov.in/images/covid/NDMA-ORDER-DTD-1.5.20.pdf"
-    },
-    {
-        "date": "01 May 2020",
-        "content": "Heatwave Dos and Don’ts during COVID-19",
-        "source": "National Disaster Management Authority, Govt. of India",
-        "link": "https://ndma.gov.in/images/covid/Heat%20Wave-Dos-and-Donts.pdf"
     }
 ]
