@@ -1,20 +1,20 @@
 [
     {
-        "date": "14 May 2020",
-        "content": "Guideline for RT-PCR based pooled sampling for migrants/returnees from abroad/green zones",
+        "date": "24 May 2020",
+        "content": "MHA Order with revised SOP for movement of Indian Nationals stranded outside the country and for specified persons to travel abroad",
+        "source": "Ministry of Home Affairs, Govt. of India",
+        "link": "https://www.mha.gov.in/sites/default/files/MHAOrderDt24052020forspecifiedpersonstotravelabroad.pdf"
+    },
+    {
+        "date": "24 May 2020",
+        "content": "Guidelines for international arrivals",
         "source": "Ministry of Health and Family Welfare, Govt. of India",
-        "link": "https://www.mohfw.gov.in/pdf/GuidelineforrtPCRbasedpooledsamplingFinal.pdf"
+        "link": "https://www.mohfw.gov.in/pdf/Guidelinesforinternationalarrivals.pdf"
     },
     {
-        "date": "13 May 2020",
-        "content": "PM CARES Fund Trust Allocates Rs. 3100 Crore for Fight against COVID-19",
-        "source": "Press Information Bureau, Govt. of India",
-        "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1623649"
-    },
-    {
-        "date": "13 May 2020",
-        "content": "Finance Minister announce measures for relief and credit support related to businesses, especially MSMEs to support Indian Economy’s fight against COVID-19",
-        "source": "Press Information Bureau, Govt. of India",
-        "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1623601"
+        "date": "24 May 2020",
+        "content": "Guidelines for domestic travel (air/train/inter-state bus travel)",
+        "source": "Ministry of Health and Family Welfare, Govt. of India",
+        "link": "https://www.mohfw.gov.in/pdf/Guidelinesfordomestictravel(airortrainorinter-statebustravel).pdf"
     }
 ]
