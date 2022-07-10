@@ -19,7 +19,7 @@
     <script>
         let lang = window.localStorage.getItem("lang")==null?document.documentElement.lang:window.localStorage.getItem("lang");
         if(lang != document.documentElement.lang){
-            let url = window.location.href.substr("https://lkounivcovid19.in/".length);
+            let url = window.location.href.substr("https://lkounivcovid19.netlify.app/".length);
             if(lang == "en"){
                 url= url.substr(`${document.documentElement.lang}/`.length);
                 window.location.href=`/${url}`;
